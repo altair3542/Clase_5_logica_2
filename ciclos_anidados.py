@@ -21,11 +21,11 @@
 
 #Ejemplo 1: Imprimir una matriz de forma que quede representada como su representacion matematica.
 
-# matriz = [
-#     [1, 2, 3],
-#     [4, 5, 6],
-#     [7, 8, 9]
-# ]
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
 # for fila in matriz:
 #     for elemento in fila:
@@ -78,12 +78,37 @@
 
 #tablero de ajedrez.
 
-n = 8
+# n = 8
 
-for i in range(n):
-    for j in range(n):
-        if (i + j) % 2 == 0:
-            print("⬛", end="")
-        else:
-            print("⬜", end="")
-    print()
+# for i in range(n):
+#     for j in range(n):
+#         if (i + j) % 2 == 0:
+#             print("⬛", end="")
+#         else:
+#             print("⬜", end="")
+#     print()
+
+#hacer transposicion de matrices, teniendo en cuenta la matriz previamente definida.
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+transpuesta =[[0]*3 for _ in range(3)]
+
+for i in range(3):
+    for j in range(3):
+        transpuesta[j][i] = matriz[i][j]
+
+for fila in transpuesta:
+    print(fila)
+
+
+#1 2 3
+#4 5 6
+#7 8 9
+
+#1 4 7
+#2 5 8
+#3 6 9
