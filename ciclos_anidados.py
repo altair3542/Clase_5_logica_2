@@ -16,4 +16,39 @@
 
 # Procesamientro de matrices con ciclos anidados.
 
-#Matriz en IT: 
+#Matriz en IT:
+# es una lista [], donde cada elemento es una lista o una sublista, estas van a representar una fila.
+
+#Ejemplo 1: Imprimir una matriz de forma que quede representada como su representacion matematica.
+
+# matriz = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+
+# for fila in matriz:
+#     for elemento in fila:
+#         print(elemento, end=" ")
+#     print()
+# # 1 2 3
+# # 4 5 6
+# # 7 8 9
+
+# suma = 0
+
+# for fila in matriz:
+#     for elemento in fila:
+#         suma += elemento
+#     print(suma)
+
+# print(f"suma total: {suma}")
+
+# contador_pares = 0
+
+# for fila in matriz:
+#     for elemento in fila:
+#         if elemento % 2 == 0:
+#             contador_pares += 1
+
+# print(f"hay {contador_pares} numeros pares en la matriz")
